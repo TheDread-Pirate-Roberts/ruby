@@ -59,10 +59,13 @@ end
 
 quiz('?- What command is used for listing the contents of a directory?', 'ls', 'Listing contents or looking around')
 quiz('?- What command is used to navigate to other directories?', 'cd', 'Changing directories')
+quiz("?- One of the items returned from running the 'ls' command was 'turkey.rb', is that a directory or file?", 'file', 'Not a directory')
+quiz('?- What command is used to make a new file?', 'touch', 'Touch')
+quiz('?- What command is used to navigate to run ruby files?', 'ruby', 'One of the many gems')
 quiz("?- If 'pwd' returns #{Dir.getwd}, what directory are you in?", @dir, "you/are/here")
 quiz("?- If 'ls' returns a list of the following things:\n#{@avail_dirs} Where can you navigate to?", @avail_dirs, "Any of the directories listed from 'ls'")
 quiz("?- If we want to go into a directory that already exists, say '#{@avail_dirs.sample}', do we need to make it again?", 'no', 'We dont have to use mkdir if the directory is already made')
 quiz("?- If we have directory path, say '~/path/to/example/directory/', how can we get to the 'example' directory with just one command?", 'cd path/to/example', 'Try to cd the whole path at once')
 quiz("?- If we have a ruby file we want to run in 'ruby_examples/example.rb' how could we run it from anywhere?", "ruby ~/ruby_examples/example.rb", "ruby ~/path/to/file, the '~' refers to root rather than where you are at currently.")
 
-puts "🇺🇸 Getting better everyday 🇺🇸"
+puts " 🇺🇸 Getting better everyday 🇺🇸"
