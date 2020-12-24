@@ -1,1 +1,1 @@
-Next return the notes degree value rather than the note
+Map notes to strings
